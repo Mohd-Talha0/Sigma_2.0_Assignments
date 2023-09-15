@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List</title>
+    <style>
+       
+       .container {
+         position: relative;
+         top: 10px; 
+       }
+
+       .droplist {
+          position: absolute;
+          display: none;
+          border: 0.5px solid rgb(190, 183, 183);
+          background-color: rgb(255, 251, 251);
+          max-height: 300px;
+          width: 260px;
+          position: absolute;
+          top: 25px;
+          overflow-y: scroll;
+       }
+       span {
+        padding: 15px 45px;
+        border: 0;
+        background-color: #ee4f4f;
+        color: rgb(0, 0, 0);
+        font-size: large;
+       }
+       .container:hover .droplist {
+          display: block;
+       }
+       .box {
+          font-size: 25px;
+          padding: 10px 10px;
+       }
+       .box:hover {
+        background-color: rgb(233, 233, 233);
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <span>Hover To View Options</span>
+       <div class="droplist"> 
+        <div class="box box_1">Option 1</div>
+        <div class="box box_2">Option 2</div>
+        <div class="box box_3">Option 3</div>
+        <div class="box box_4">Option 4</div>
+        <div class="box box_5">Option 5</div>
+        <div class="box box_6">Option 6</div>
+        <div class="box box_7">Option 7</div>
+        <div class="box box_8">Option 8</div>
+        <div class="box box_9">Option 9</div>
+        <div class="box box_10">Option 10</div>
+       </div>
+    </div>
+</body>
+</html>
